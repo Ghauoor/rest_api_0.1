@@ -1,4 +1,3 @@
-const { type } = require("express/lib/response");
 const mongooes = require("mongoose");
 
 const productSchema = new mongooes.Schema({
@@ -20,8 +19,8 @@ const productSchema = new mongooes.Schema({
     default: 4.5,
   },
   createdAt: {
-    type: Date(),
-    default: Date.now(),
+    type: Date,
+    default: Date.now,
   },
   company: {
     type: String,
