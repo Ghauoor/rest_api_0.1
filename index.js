@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const connectDB = require("./db/connect");
 const app = express();
@@ -15,12 +16,12 @@ app.use("/api/products", products_routes);
 
 const start = async () => {
   try {
-    await connectDB();
+    await connectDB(process.env.MONGODB_URI);
     app.listen(port, () => {
       console.log(`App listening at http://localhost:${port}`);
     });
   } catch (error) {
-    console.log(error);
+    console.log("Error Message at Start Func -->", error);
   }
 };
 
