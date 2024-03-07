@@ -1,0 +1,28 @@
+[
+  {
+    "name": "MacBook Pro",
+    "price": 1999,
+    "featured": true,
+    "rating": 4.8,
+    "company": "apple"
+  },
+  {
+    "name": "MSI Gaming Laptop",
+    "price": 1499,
+    "featured": false,
+    "rating": 4.5,
+    "company": "msi"
+  },
+  {
+    "name": "Samsung Galaxy S21",
+    "price": 899,
+    "rating": 4.7,
+    "company": "samsung"
+  },
+  {
+    "name": "Dell XPS 15",
+    "price": 1599,
+    "rating": 4.6,
+    "company": "dell"
+  }
+]
